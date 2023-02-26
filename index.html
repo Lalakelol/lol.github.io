@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athena CORP.</title>
+    <link rel="stylesheet" href="panther.css">
+</head>
+
+<body onload="time()">
+
+
+    <ul id="navbar">
+
+        <li><a href="index.html">
+                <h2>Home</h2>
+            </a></li>
+        <li><a href="about1.html">
+                <h2>About</h2>
+            </a></li>
+        <li><a href="follow1.html">
+                <h2>Social Media</h2>
+            </a></li>
+
+        <li><a href="address.html">
+                <h2>Address</h2>
+            </a></li>
+        <li><br>
+            <div id="ora"></div>
+
+        </li>
+    </ul>
+
+    <img src="logo.png" alt="no logo" height="100" width="150">
+    
+    
+    <div class="content">
+            <h1><b><I>Athena:</I></b></h1>
+        </div>
+
+
+      
+            <button>
+                <a href="https://www.cardekho.com/newcars" target="_blank">Explore New Cars</a>
+            </button>
+
+<main>
+
+        <div class="f1-content f1-display-container">
+            <img class="mySlides"
+                src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Audi/Q3-Sportback/9678/1677136467625/front-left-side-47.jpg?tr=w-456" title="Audi Q3"
+                height="400" width="700">
+            <img class="mySlides" src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Mercedes-Benz/C-Class/8373/1677304779038/front-left-side-47.jpg?tr=w-456"
+              title="Mercedes-Benz C-Class"  height="400" width="700">
+            <img class="mySlides"
+                src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Tata/Harrier/7500/1676358133914/front-left-side-47.jpg?tr=w-456" title="Tata Harrier"
+                height="400" width="700">
+            <img class="mySlides"
+                src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Citroen/C3-EV/9598/1676960438789/front-left-side-47.jpg?tr=w-456" title="Citroen eC3"
+                height="400" width="700">
+
+           &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<button class="f1-button f1-black f1-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="f1-button f1-black f1-display-right" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+
+         </main><br>
+         
+         <div class="text">
+         <p >  "Here ,Athena.Org is a car broker company,which povide all types of Cars
+             and related services on customer's request.You can check more cars form 
+             any website and we can provide it to you.Athena is also planning to launch its own cars."</p></div>
+
+
+             <div id="new">
+    <p>
+        The consumption and emissions values in the website refer to your geographical IP. This value might be
+        unrealistic if you navigate using VPN or if the position of your Internet provider is imprecise. If you
+        believe you are incorrectly geolocalized, contact your dealer to get valid consumption and emissions
+        information in your area.
+        <br>
+        <br>
+        Hosted and Designed by <B><u>Athena CORPORATIONS PVT. LTD. INDIA</u></B> <br>
+        .<B><u>Copyright © 2023 Athena CORPS</u></B>
+    </p></div>
+
+ <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+                showDivs(slideIndex += n);
+            }
+
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                if (n > x.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = x.length }
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                x[slideIndex - 1].style.display = "block";
+            }
+
+        function time() {
+            var today = new Date();
+            var h = today.getHours();
+            var m = today.getMinutes();
+            var s = today.getSeconds();
+            m = checkTime(m);
+            s = checkTime(s);
+
+            document.getElementById('ora').innerHTML =
+                '<div class="hours">' + h + '</div>' + ":" + '<div class="minutes">' + m + '</div>' + ":" + '<div class="seconds">' + s + '</div>';
+            var t = setTimeout(time, 1000);
+        }
+        function checkTime(i) {
+            if (i < 10) { i = "0" + i };
+            return i;
+        }
+
+        time();
+    </script>
+
+
+</body>
+
+
+
+
+
+</body>
+
+</html>

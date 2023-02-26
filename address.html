@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT</title>
+    <link rel="stylesheet" href="adress.css">
+</head>
+<body onload="time()">
+    <header>
+        <ul id="navbar">
+
+            <li><a href="index.html">
+                    <h2>Home</h2>
+                </a></li>
+            <li><a href="about1.html">
+                    <h2>About</h2>
+                </a></li>
+            <li><a href="follow1.html">
+                    <h2>Social Media</h2>
+                </a></li>
+    
+            <li><a href="address.html">
+                    <h2>Address</h2>
+                </a></li>
+            <li><br>
+                <div id="ora"></div>
+    
+            </li>
+        </ul>
+    </header >
+    <img src="logo.png" alt="no logo" height="100" width="150">
+    <main>
+        <h2> <b> <u>Headquarter:</u> </b> </h2>
+        <p id="contact">
+            E-Mail ID: pantheracorps@gmail.com <br>
+            Ph no. : 7607370738 <br>
+            Headquarters: Lanka ,Varanasi ,U.P , INDIA <br>
+        </p>
+    </main>
+    
+    
+    <script>
+        function time() {
+            var today = new Date();
+            var h = today.getHours();
+            var m = today.getMinutes();
+            var s = today.getSeconds();
+            m = checkTime(m);
+            s = checkTime(s);
+
+            document.getElementById('ora').innerHTML =
+                '<div class="hours">' + h + '</div>' + ":" + '<div class="minutes">' + m + '</div>' + ":" + '<div class="seconds">' + s + '</div>';
+            var t = setTimeout(time, 1000);
+        }
+        function checkTime(i) {
+            if (i < 10) { i = "0" + i };
+            return i;
+        }
+
+        time();
+    </script>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<div id="new">
+    <p>
+        The consumption and emissions values in the website refer to your geographical IP. This value might be
+        unrealistic if you navigate using VPN or if the position of your Internet provider is imprecise. If you
+        believe you are incorrectly geolocalized, contact your dealer to get valid consumption and emissions
+        information in your area.
+        <br>
+        <br>
+        Hosted and Designed by <B><u>Athena CORPORATIONS PVT. LTD. INDIA</u></B> <br>
+        .<B><u>Copyright © 2023 Athena CORPS</u></B>
+    </p></div>
+
+
+    
+
+</body>
+</html>

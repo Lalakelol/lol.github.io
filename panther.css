@@ -1,0 +1,127 @@
+
+body{
+    background-color: #d6fff6;
+}
+
+
+a{
+    color:rgb(233, 131, 22);
+    
+}
+#img
+{
+    margin-top:80px;
+    width: 50%;
+    float: right ;
+    border-radius: 60%;
+}
+.content h1{
+    display: inline-block;
+    font-family:cursive ;
+    font-size: 30px;
+    color:rgb(57, 86, 101);
+    padding-top: 0px;
+    padding-left: 10px;
+    text-align: left;
+    text-decoration: underline;
+    text-decoration-style: none;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+.nope button{
+     font-family:'Trebuchet MS';
+    padding-top: 0px;
+    display: inline;
+    font-size: 40px;
+    color:orangered;
+    padding-left: 150px;
+    text-align: right;
+   
+}
+button{
+    padding:5px 100px 5px 100px;
+    text-align: center;
+    font-size: 40px;
+    border-radius:10px;
+    color: rgb(1, 47, 49);
+    background-color: rgba(222, 222, 222, 0);
+    border: none ;
+
+}
+#button
+{
+    padding-left: 80px;
+}
+
+a:hover{
+    color:rgb(91, 152, 231);
+    text-decoration: underline;
+    text-decoration-style: solid;
+}
+button:hover{
+    color:blue;
+}
+
+
+
+        
+        #navbar li:hover ul { display: block; }
+        #navbar, #navbar ul{
+        margin: 0; padding: 0;
+        list-style-type: none;
+        }
+        #navbar {
+        height: 80px;
+        background-color: #4dccbd;
+        padding-left: 25px; min-width:
+        470px;
+        }
+
+
+        #navbar li {
+float: left;
+position: relative;
+height: 100%;
+}
+#navbar li a {
+display: block;
+padding: 10px;
+width: 300px; color: #413939;
+text-decoration: none;
+text-align: center;
+}
+#navbar ul li { float: none; }
+#navbar li:hover { background-color: #ff8484; }
+#navbar ul li:hover { background-color: #4dccbd;
+}
+
+
+div {display: inline-block;}
+.hours {
+  font-size: 40px;
+  color: #231651;
+}
+.minutes {
+  font-size: 40px;
+  color: #231651;
+}
+
+.seconds {
+  font-size: 40px;
+  color: #231651;
+}
+.text{
+    height: 300px;
+    width: 400px;
+    position: absolute;
+    top: 300px;
+    right: 200px;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+    font-weight: bold;
+
+}
+#new{
+    background-color: rgb(111, 242, 194);
+}

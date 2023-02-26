@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOLLOW US</title>
+    <link rel="stylesheet" href="follow1.css">
+</head>
+<body onload="time()">
+    <header>
+        <ul id="navbar">
+
+            <li><a href="index.html">
+                    <h2>Home</h2>
+                </a></li>
+            <li><a href="about1.html">
+                    <h2>About</h2>
+                </a></li>
+            <li><a href="follow1.html">
+                    <h2>Social Media</h2>
+                </a></li>
+    
+            <li><a href="address.html">
+                    <h2>Address</h2>
+                </a></li>
+            <li><br>
+                <div id="ora"></div>
+    
+            </li>
+        </ul>
+
+    </header >
+    <img src="logo.png" alt="no logo" height="100" width="150">
+
+
+    <MAIN>
+       <h2> <b> <i> FOLLOW US ON THE FOLLOWING PLATFORMS..</i></b></h2> 
+       <div>
+       <a href="https://www.facebook.com"  target="_blank"><img src="fb.jpg" width="40px"></a> &nbsp &nbsp &nbsp  <a href="https://www.facebook.com"  target="_blank">FACEBOOK</a>
+       <br>
+       <br>
+       <br>
+        <a href="https://www.instagram.com/accounts/login/" target="_blank" ><img src="insta.jpg" width="40px"></a> &nbsp &nbsp &nbsp  <a href="https://www.instagram.com/accounts/login/" target="_blank" >INSTAGRAM</a>
+        </div>
+    </MAIN><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div id="new">
+        <p>
+            &nbspThe consumption and emissions values in the website refer to your geographical IP. This value might be
+            unrealistic if you navigate using VPN or if the position of your Internet provider is imprecise. If you<br>
+            &nbspbelieve you are incorrectly geolocalized, contact your dealer to get valid consumption and emissions
+            information in your area.
+            <br>
+            <br>
+            &nbspHosted and Designed by <B><u>Athena CORPORATIONS PVT. LTD. INDIA</u></B> <br>
+            &nbsp<B><u>Copyright © 2023 Athena CORPS</u></B>
+        </p></div>
+    <script>
+        function time() {
+            var today = new Date();
+            var h = today.getHours();
+            var m = today.getMinutes();
+            var s = today.getSeconds();
+            m = checkTime(m);
+            s = checkTime(s);
+
+            document.getElementById('ora').innerHTML =
+                '<div class="hours">' + h + '</div>' + ":" + '<div class="minutes">' + m + '</div>' + ":" + '<div class="seconds">' + s + '</div>';
+            var t = setTimeout(time, 1000);
+        }
+        function checkTime(i) {
+            if (i < 10) { i = "0" + i };
+            return i;
+        }
+
+        time();
+    </script>
+</body>
+</html>
